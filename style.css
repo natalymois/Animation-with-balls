@@ -1,0 +1,61 @@
+body { 
+     text-align: center; 
+	 font: bold 30px Calibri;
+	 text-shadow: #a67f4d 3px 3px;
+	 color: #F2DB01;
+ } 
+
+.weather {
+  display: block; 
+  width: 100vw;
+  height: 100vh;
+  margin: 10px auto;
+  border: 2px solid #9ea524; 
+  background: #92bede;
+  background-image: url(images/sharik-1red.jpg),
+              url(images/sharik-2blue.jpg), 
+              url(images/sharik-yellow.png),
+			  url(images/sharik-red.png);
+			 	 
+  background-position: 63% 93%, 
+              74% 88%, 
+			  21% 97%,
+			  30% 92%;
+			  
+  background-repeat: no-repeat;
+  -webkit-animation: weather 5s;
+  animation: weather 5s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  }
+ 
+ @keyframes weather { 
+  0% {
+    background-position: 63% 93%, 
+              74% 88%, 
+			  21% 97%,
+			  30% 92%;
+  }
+  100% {
+    background-position: 68.5% 11%, 79% 1%, 41% 2.5%, 30% 0;
+  }
+}
+
+@-webkit-keyframes weather { 
+  0% {
+    background-position: 600px 750px, 
+              700px 650px, 
+			  200px 550px,
+			  350px 650px;
+  }
+  100% {
+    background-position: 650px 100px, 750px 10px, 300px 25px, 350px 0px;
+  }
+}
+
+  
+  
+  
+  
